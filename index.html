@@ -3,37 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Deeds</title>
+    <title>Deeds | Document His Deeds in Your Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;500;600&display=swap');
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(250, 249, 246, 0.8), rgba(250, 249, 246, 0.95)), url('https://images.unsplash.com/photo-1544465544-1b71aee9dfa3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+<body class="bg-[#faf9f6] text-gray-800 antialiased">
+
+    <nav class="max-w-6xl mx-auto px-6 py-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900 serif">Deeds.</h1>
     </nav>
-    <header class="hero-bg" style="background-image: url('images/deeds_banner.jpg');">
-        <h1>Welcome to Our Deeds</h1>
-    </header>
-    <section class="product-offerings">
-        <h2>Our Offerings</h2>
-        <p>Description of product offerings goes here.</p>
+
+    <section class="hero-bg py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 serif leading-tight">
+                Document His Deeds in your life.
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-700 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
+                Turn your testimonies, faith journey, and the ways God has moved into beautiful, heirloom-quality printed books to share with generations.
+            </p>
+            <a href="#feedback" class="bg-gray-900 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-gray-800 transition shadow-lg inline-block">
+                Help Us Launch
+            </a>
+        </div>
     </section>
-    <section class="feedback-form">
-        <h2>Your Feedback</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="feedback">Feedback:</label>
-            <textarea id="feedback" name="feedback" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+
+    <section class="max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 serif">Capture the story He is writing.</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Choose from beautifully guided formats to document your walk with Him. All journeys culminate in premium printed mementos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <h3 class="text-2xl font-semibold mb-3 serif text-gray-900">Why I Believe</h3>
+                <p class="text-gray-600 leading-relaxed">A written record of the foundation of your faith. Document exactly why you believe in God to refer back to in hard seasons, and share with family and friends.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <h3 class="text-2xl font-semibold mb-3 serif text-gray-900">My Life, by God</h3>
+                <p class="text-gray-600 leading-relaxed">Your life's story, viewed through the lens of His grace. Trace how God has saved, transformed, and grown you through every experience and season.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <h3 class="text-2xl font-semibold mb-3 serif text-gray-900">My Testimony</h3>
+                <p class="text-gray-600 leading-relaxed">Every believer has a story. Capture the transformational ways God called you, saved you, and the moment you decided to give your life to Him.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <h3 class="text-2xl font-semibold mb-3 serif text-gray-900">Our Community's Story</h3>
+                <p class="text-gray-600 leading-relaxed">Celebrate what God is doing together. Document the answered prayers and miracles in your church, small group, or family over a given year from multiple perspectives.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <h3 class="text-2xl font-semibold mb-3 serif text-gray-900">His Deeds This Month</h3>
+                <p class="text-gray-600 leading-relaxed max-w-2xl">Guided monthly reflection exercises to help you slow down. Take time to write down how God moved, provided, and grew you each month, culminating in a beautiful printed volume at the end of the year.</p>
+            </div>
+        </div>
     </section>
-    <footer>
+
+    <section id="feedback" class="bg-gray-100 py-24 px-6 border-t border-gray-200">
+        <div class="max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2 serif text-center">We're launching soon.</h2>
+            <p class="text-gray-600 text-center mb-8">Deeds is currently in development. We would love your honest feedback to help us build exactly what you need.</p>
+            
+            <form action="https://script.google.com/macros/s/AKfycbz9gSRHojMC8OcYr7pzNWru4VWKmpHLXP1e5v5vR_5Pij9hRGoY0n-_yveRTFoo8myWLw/exec" method="POST" class="space-y-6">
+                
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Stay in touch for our launch</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition">
+                </div>
+
+                <div>
+                    <label for="buy-question" class="block text-sm font-medium text-gray-700 mb-1">Would you buy one of these products? Why or why not? Which one?</label>
+                    <textarea id="buy-question" name="buy-question" rows="4" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition" placeholder="Share your thoughts..."></textarea>
+                </div>
+
+                <div>
+                    <label for="ideas-question" class="block text-sm font-medium text-gray-700 mb-1">What other ideas do you have for this business as we launch?</label>
+                    <textarea id="ideas-question" name="ideas-question" rows="3" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition" placeholder="Any features, book types, or ideas?"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gray-900 text-white font-medium py-4 rounded-md hover:bg-gray-800 transition shadow-md">
+                    Submit Feedback
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 text-gray-500 text-sm">
         <p>&copy; 2026 Deeds. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
