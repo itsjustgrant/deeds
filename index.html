@@ -3,12 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Landing Page</title>
 </head>
-<body>
-    <form action="https://script.google.com/macros/s/AKfycbz9gSRHojMC8OcYr7pzNWru4VWKmpHLXP1e5v5vR_5Pij9hRGoY0n-_yveRTFoo8myWLw/exec">
-        <input type="text" name="name" placeholder="Enter your name">
-        <input type="submit" value="Submit">
-    </form>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-5 text-center">
+        <h1 class="text-3xl">Welcome to Our Product Landing Page</h1>
+    </header>
+    <main class="container mx-auto my-5">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div class="bg-white p-5 rounded-lg shadow">
+                <h2 class="text-xl">Product 1</h2>
+                <p>Description of product 1.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow">
+                <h2 class="text-xl">Product 2</h2>
+                <p>Description of product 2.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow">
+                <h2 class="text-xl">Product 3</h2>
+                <p>Description of product 3.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow">
+                <h2 class="text-xl">Product 4</h2>
+                <p>Description of product 4.</p>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow">
+                <h2 class="text-xl">Product 5</h2>
+                <p>Description of product 5.</p>
+            </div>
+        </section>
+        <section class="mt-5">
+            <h2 class="text-2xl">Feedback Form</h2>
+            <form action="https://script.google.com/macros/s/AKfycbz9gSRHojMC8OcYr7pzNWru4VWKmpHLXP1e5v5vR_5Pij9hRGoY0n-_yveRTFoo8myWLw/exec" method="POST" class="mt-3">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" class="border rounded p-2 w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="feedback" class="block text-gray-700">Feedback:</label>
+                    <textarea id="feedback" name="feedback" class="border rounded p-2 w-full" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-blue-600 text-white text-center p-5 mt-5">
+        <p>&copy; 2026 Product Landing Page</p>
+    </footer>
 </body>
 </html>
